@@ -48,9 +48,7 @@
 
                     <b-button
                       @click="agregarProducto(producto)"
-                      variant="success"
-                      >Agregar</b-button
-                    >
+                      variant="success">Agregar</b-button>
                   </b-card>
                 </b-card-group>
               </div>
@@ -63,9 +61,9 @@
 </template>
 
 <script>
-import Navbar from "@/components/Navbar.vue";
+//import Navbar from "@/components/Navbar.vue";
 import { mapState, mapMutations } from "vuex";
-import CarroComprasVue from "./CarroCompras.vue";
+//import CarroComprasVue from "./CarroCompras.vue";
 
 export default {
   data() {

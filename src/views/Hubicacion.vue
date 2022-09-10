@@ -6,7 +6,7 @@
     </h2>
     <div>
       <b-card-group deck>
-        <b-row>
+        <b-row class="mapa">
           <b-col cols="9">
             <b-card border-variant="white">
               <google-map />
@@ -26,9 +26,9 @@
               <b-card-text>
                 Lunes a Viernes 12:00 - 21:30
                 <br />Sábado 18:00 - 21:30
-                <br />Domingo - - - - - - --
+                <br />Domingo: Cerrado
               </b-card-text>
-              <b-button href="#" variant="primary">Go somewhere</b-button>
+              <!-- <b-button href="#" variant="primary">Go somewhere</b-button> -->
             </b-card>
           </b-col>
         </b-row>
@@ -36,6 +36,7 @@
     </div>
   </div>
 </template>
+
 <script>
 import GoogleMap from "../components/GoogleMap.vue";
 
@@ -45,3 +46,6 @@ export default {
   },
 };
 </script>
+
+<style>
+</style>

@@ -1,7 +1,7 @@
 
 <template>
-  <div>
-    <div>
+
+    <div class="map">
       <vl-map
         :load-tiles-while-animating="true"
         :load-tiles-while-interacting="true"
@@ -20,12 +20,11 @@
           <vl-style-box>
             <vl-style-icon src="../assets/marker.png" :anchor="[.5, 1]" :scale=".3"></vl-style-icon>
           </vl-style-box>
+          
         </vl-layer-vector>
       </vl-map>
     </div>
 
-
-  </div>
 </template>
 
 <script>

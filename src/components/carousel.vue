@@ -3,14 +3,11 @@
   <div>
     <b-carousel
       id="carousel-1"
-      v-model="slide"
       :interval="4000"
       controls
       indicators
       background="#ababab"
       style="text-shadow: 1px 1px 2px #333;"
-      @sliding-start="onSlideStart"
-      @sliding-end="onSlideEnd"
     >
       <b-carousel-slide>
         <template v-slot:img>
@@ -32,7 +29,7 @@
                     <b>PROMOCIÓN DE ESTA SEMANA</b>
                   </H2>
                   <br>
-                  <p><h3 class="d-flex justify-content-center">Churrasco de vacuno 2X$6.000</h3></p>
+                  <b> <h3 class="d-flex justify-content-center">Churrasco de vacuno 2X$6.000</h3> </b>
                 </b-card-text>
               </b-col>
               <b-col cols="1"></b-col>
@@ -92,7 +89,7 @@
           <b-card
             overlay
             bg-variant="secondary"
-            img-src="http://granitoycuarzo.mx/wp-content/uploads/2019/04/plomo-01-600x240.jpg "
+            img-src="https://image.freepik.com/foto-gratis/concepto-material-pared-fondo-madera-rasgunado-pared_53876-30226.jpg"
             img-width="1024"
             img-height="380"
             img-alt="Card Image"
@@ -103,7 +100,7 @@
               </b-col> 
               <b-col cols="4">
                 <b-img
-                  src="https://instagram.fscl13-2.fna.fbcdn.net/v/t51.2885-15/e35/66348731_1319538621526920_4735576669282712364_n.jpg?_nc_ht=instagram.fscl13-2.fna.fbcdn.net&_nc_cat=100&_nc_ohc=NDhStKZpoiUAX8CHsw_&oh=836c3d6a9b9884bd34335b3e3eff1a63&oe=5F7C80E5"
+                  src="https://www.rockandpop.cl/wp-content/uploads/2022/05/tarjeta-junaeb-clave-dinamica.jpg"
                   fluid
                   alt="Responsive image"
                   width="600"
@@ -125,30 +122,30 @@
 
     </b-carousel>
 
-    <p class="mt-4">
+    <!-- <p class="mt-4">
       Slide #: {{ slide }}
       <br />
       Sliding: {{ sliding }}
-    </p>
+    </p> -->
   </div>
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-      slide: 0,
-      sliding: null,
-    };
-  },
-  methods: {
-    onSlideStart(slide) {
-      this.sliding = true;
-    },
-    onSlideEnd(slide) {
-      this.sliding = false;
-    },
-  },
+  // data() {
+  //   return {
+  //     slide: 0,
+  //     sliding: null,
+  //   };
+  // },
+  // methods: {
+  //   onSlideStart(slide) {
+  //     this.sliding = true;
+  //   },
+  //   onSlideEnd(slide) {
+  //     this.sliding = false;
+  //   },
+  // },
 };
 </script>
 

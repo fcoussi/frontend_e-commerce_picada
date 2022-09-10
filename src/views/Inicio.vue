@@ -1,106 +1,91 @@
 <template>
   <b-container fluid="xl">
     <div class="mb-4">
-      <carousel />
+      <Carousel />
+
+      <div class="d-flex justify-content-center mb-5">
+        <b-card-group deck>
+          <b-row class="group-tarjet d-flex justify-content-center">
+            <b-col class="columna" sm="7" md="5" lg="3" xl="5">
+              <b-card
+                title="1.Elige tu comida"
+                img-src="https://cdn-icons-png.flaticon.com/128/851/851554.png"
+                img-alt="Image"
+                img-top
+                tag="article"
+                class="tarjet"
+                img-height="100"
+              >
+                <b-card-text
+                  >Escoge nuestros productos en nuestra tienda
+                  virtual</b-card-text
+                >
+              </b-card>
+            </b-col>
+            <b-col class="columna" sm="7" md="5" lg="3" xl="5">
+              <b-card
+                title="2. Haz tu pedido"
+                img-src="https://cdn-icons-png.flaticon.com/128/1792/1792671.png"
+                img-alt="Image"
+                img-top
+                tag="article"
+                class="tarjet"
+                img-height="100"
+              >
+                <b-card-text
+                  >Es fácil y rápido. Puedes pagar online o en la
+                  entrega</b-card-text
+                >
+              </b-card>
+            </b-col>
+            <b-col class="columna" sm="7" md="5" lg="3" xl="5">
+              <b-card
+                title="3. Recibe tu comida"
+                img-src="https://cdn-icons-png.flaticon.com/128/4589/4589756.png"
+                img-alt="Image"
+                img-top
+                tag="article"
+                class="tarjet"
+                img-height="100"
+              >
+                <b-card-text>Reparto a domicilio sólo en Temuco</b-card-text>
+              </b-card>
+            </b-col>
+          </b-row>
+        </b-card-group>
+      </div>
     </div>
 
-    <div class="d-flex justify-content-center mb-5">
-      <b-card-group deck>
-        <b-card
-          title="1.Elige tu comida"
-          img-src="https://image.flaticon.com/icons/svg/857/857681.svg "
-          img-alt="Image"
-          img-top
-          tag="article"
-          style="max-width: 30rem;"
-          class="mb-2"
-          img-height="100"
-        >
-          <b-card-text>Escoge nuestros productos en nuestra tienda virtual</b-card-text>
-        </b-card>
-
-        <b-card
-          title="2. Haz tu pedido"
-          img-src="https://image.flaticon.com/icons/svg/888/888140.svg"
-          img-alt="Image"
-          img-top
-          tag="article"
-          style="max-width: 30rem;"
-          class="mb-2"
-          img-height="100"
-        >
-          <b-card-text>Es fácil y rápido. Puedes pagar online o en la entrega</b-card-text>
-        </b-card>
-
-        <b-card
-          title="3. Recibe tu comida"
-          img-src="https://image.flaticon.com/icons/svg/3105/3105008.svg "
-          img-alt="Image"
-          img-top
-          tag="article"
-          style="max-width: 30rem;"
-          class="mb-2"
-          img-height="100"
-        >
-          <b-card-text>Reparto a domicilio sólo en Temuco</b-card-text>
-        </b-card>
-      </b-card-group>
-    </div>
-
-    <div class="mt-4 mb-2">
-      <b-row class="text-center">
-        <b-col cols="4" class="text-light bg-danger">
-          <h4>Fono de Reparto: 2344787</h4>
-        </b-col>
-        <b-col cols="3" class="bg-danger"></b-col>
-        <b-col cols="5" class="text-light bg-danger">
-          <h6>
-            <b>Encuentranos en:</b>
-          </h6>
-          <div>
-            <b-link
-              href="https://www.facebook.com/pages/category/Sandwich-Shop/La-pica-del-zanhueza-384958958282352/"
-            >
-              <img
-                class="social_networksA"
-                width="40"
-                height="40"
-                src="https://image.flaticon.com/icons/svg/1051/1051309.svg"
-                alt
-              />
-            </b-link>
-            <b-link href="https://www.instagram.com/picadelzanhueza/">
-              <img
-                class="social_networksA"
-                width="40"
-                height="40"
-                src="https://image.flaticon.com/icons/svg/1400/1400829.svg"
-                alt
-              />
-            </b-link>
-          </div>
-        </b-col>
-      </b-row>
+    <div>
+      <Footer />
     </div>
   </b-container>
 </template>
 
-
 <script>
 import Carousel from "../components/carousel.vue";
-import Formulario from "../components/Formulario.vue";
+import Footer from "../components/footer.vue";
+
 export default {
-  components: { Carousel, Formulario },
+  components: { Carousel, Footer },
 };
 </script>
 
 <style>
-.footer {
-  background: #b9273a; /*Color de fondo*/
-}
-
 .termino {
   background: #080808;
+}
+
+.tarjet {
+  margin-block: 10px;
+  /* background: #b9273a; */
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.group-tarjet {
+  /* background: #080808; */
+  padding: 20px;
 }
 
 .main-header {

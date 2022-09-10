@@ -9,44 +9,44 @@ const router = new Router({
 
     {
       path: '/',
-      name: 'Inicio',
+      name: 'inicio',
       component: () => import('../views/Inicio.vue')
     },
     {
       path: '/menu',
-      name: 'Menu',
+      name: 'menu',
       component: () => import('../views/Menu.vue')
     },
     {
       path: '/hubicacion',
-      name: 'Hubicacion',
+      name: 'hubicacion',
       component: () => import('../views/Hubicacion.vue')
     },
     {
       path: '/nosotros',
-      name: 'Nosotros',
+      name: 'nosotros',
       component: () => import('../views/Nosotros.vue')
     },
     {
       path: '/admin',
-      name: 'Admin',
+      name: 'admin',
       component: () => import('../views/Admin.vue')
     },
     {
       path: '/carro-compras',
-      name: 'CarroCompras',
+      name: 'carroCompras',
       component: () => import('../views/CarroCompras.vue')
 
     },
     {
       path: '/dashboard',
-      name: 'Dashboard',
+      name: 'dashboard',
       component: () => import('../views/Dashboard.vue')
 
     },
     {
       path: '/adminProducto',
-      name: 'AdministracionProducto',
+      name: 'administracionProducto',
       component: () => import('../views/AdministracionProducto.vue')
 
     },
